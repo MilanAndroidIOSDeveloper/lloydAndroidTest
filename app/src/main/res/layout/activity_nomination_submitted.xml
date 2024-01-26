@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".activities.NominationSubmittedActivity">
+
+	<androidx.appcompat.widget.Toolbar
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/black"
+		android:paddingBottom="@dimen/_8sdp"
+		android:paddingTop="@dimen/_27sdp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/_14sdp"
+			android:fontFamily="@font/poppins_regular"
+			android:layout_gravity="center_horizontal"
+			android:text="@string/nomination_submitted"
+			android:textColor="@color/white" />
+	</androidx.appcompat.widget.Toolbar>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/_145sdp"
+			android:importantForAccessibility="no"
+			android:scaleType="centerCrop"
+			android:src="@drawable/artwork_submitted" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/bold_headline_large"
+			android:textAllCaps="true"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginHorizontal="@dimen/_14sdp"
+			android:layout_marginTop="@dimen/_25sdp"
+			android:text="@string/nomination_submitted"
+			android:textAlignment="center"
+			android:textColor="@color/black" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/body"
+			tools:ignore="TextSizeCheck"
+			android:contentDescription="@string/nomination_submitted_body"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginHorizontal="@dimen/_14sdp"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:text="@string/nomination_submitted_body"
+			android:textAlignment="center"
+			android:textColor="@color/black" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:clipChildren="false"
+		android:clipToPadding="false"
+		android:elevation="10dp"
+		android:gravity="center_vertical"
+		android:orientation="vertical"
+		android:paddingHorizontal="24dp"
+		android:paddingVertical="20dp">
+
+		<androidx.appcompat.widget.AppCompatButton
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/create_button"
+			style="@style/button"
+			tools:ignore="TextSizeCheck"
+			android:contentDescription="@string/create_new_nomination"
+			android:text="@string/create_new_nomination" />
+
+		<androidx.appcompat.widget.AppCompatButton
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/back_button"
+			android:contentDescription="@string/back_to_home"
+			style="@style/button_outline"
+			tools:ignore="TextSizeCheck"
+			android:layout_marginTop="@dimen/_8sdp"
+			android:text="@string/back_to_home" />
+
+	</LinearLayout>
+</LinearLayout>

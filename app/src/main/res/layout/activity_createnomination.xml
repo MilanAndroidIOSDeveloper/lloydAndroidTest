@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contents"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CreateNominationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:paddingTop="@dimen/_27sdp"
+            android:paddingBottom="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/create_a_nomination"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/artwork_create" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_45sdp">
+
+                    <TextView
+                        style="@style/bold_headline_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_22sdp"
+                        android:text="@string/id_like_to_nominate"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:text="@string/id_like_to_nominate_subtitle"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        style="@style/bold_headline_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_28sdp"
+                        android:text="@string/cubeName_title"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/nominee_sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_38sdp"
+                        android:background="@drawable/spinner_bg"
+                        android:dropDownWidth="match_parent"
+                        android:prompt="@string/select_option_hint"
+                        android:spinnerMode="dropdown"
+                        android:theme="@style/spinner_theme" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_35sdp"
+                        android:background="@color/grey_mild" />
+
+                    <TextView
+                        style="@style/bold_headline_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:text="@string/reason_title"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:text="@string/reason_subtitle"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        style="@style/bold_headline_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:text="@string/reasoning_title"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_reasoning"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_155sdp"
+                        android:background="@drawable/edittext_bg"
+                        android:fontFamily="@font/anonymous_pro_regular"
+                        android:gravity="start"
+                        android:imeOptions="actionDone"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/_8sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_35sdp"
+                        android:background="@color/grey_mild" />
+
+                    <TextView
+                        style="@style/bold_headline_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:text="@string/process_title"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:text="@string/process_subtitle"
+                        android:textColor="@color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_process"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_30sdp">
+
+                        <RadioButton
+                            android:id="@+id/rb_very_unfair"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/radiobutton_bg"
+                            android:button="@null"
+                            android:checked="false"
+                            android:drawableStart="@drawable/rb_selector"
+                            android:drawableEnd="@drawable/very_unfair"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/very_unfair"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_unfair"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:background="@drawable/radiobutton_bg"
+                            android:button="@null"
+                            android:checked="false"
+                            android:drawableStart="@drawable/rb_selector"
+                            android:drawableEnd="@drawable/fair"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/unfair"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_not_sure"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:background="@drawable/radiobutton_bg"
+                            android:button="@null"
+                            android:checked="false"
+                            android:drawableStart="@drawable/rb_selector"
+                            android:drawableEnd="@drawable/not_sure"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/not_sure"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_fair"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:background="@drawable/radiobutton_bg"
+                            android:button="@null"
+                            android:checked="false"
+                            android:drawableStart="@drawable/rb_selector"
+                            android:drawableEnd="@drawable/fairs"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/fair"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_very_fair"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:background="@drawable/radiobutton_bg"
+                            android:button="@null"
+                            android:checked="false"
+                            android:drawableStart="@drawable/rb_selector"
+                            android:drawableEnd="@drawable/very_fair"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/very_fair"
+                            android:textSize="@dimen/_15sdp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:elevation="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/back_button"
+                style="@style/button_outline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="7dp"
+                android:layout_weight="1"
+                android:text="@string/back"
+                tools:ignore="TextSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit_button"
+                style="@style/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_weight="2"
+                android:enabled="false"
+                android:text="@string/submit_nomination"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Progress_Bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="@dimen/_80sdp"
+        android:visibility="gone" />
+</RelativeLayout>
+
+

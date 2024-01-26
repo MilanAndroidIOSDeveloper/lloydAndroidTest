@@ -1,0 +1,44 @@
+<resources>
+	<string name="app_name">LloydAndroidTest</string>
+	<string name="your_nominations_title">Your nominations</string>
+	<string name="empty_body">once you submit a nomination, you will be able to SEE it here.</string>
+	<string name="create_new_nomination">Create New Nomination</string>
+	<string name="create_a_nomination">Create a nomination</string>
+	<string name="submit_nomination">Submit Nomination</string>
+	<string name="back">Back</string>
+	<string name="id_like_to_nominate">I’d like to nominate…</string>
+	<string name="id_like_to_nominate_subtitle">Please select a cube who you feel has done something honourable this month or just all round has a great work ethic.</string>
+	<string name="reason_title">I’d like to nominate THIS CUBE BECAUSE…</string>
+	<string name="reason_subtitle">Please let us know why you think this cube deserves the ‘cube of the month’ title 🏆⭐</string>
+	<string name="process_title">IS HOW WE CURRENTLY RUN <font color='#FFF70087'>CUBE OF THE MONTH </font>FAIR?</string>
+	<string name="process_subtitle">As you know, out the nominees chosen, we spin a wheel to pick the cube of the month. What’s your opinion on this method?</string>
+	<string name="nomination_submitted">Nomination Submitted</string>
+	<string name="back_to_home">Back to home</string>
+	<string name="cubeName_title"><font color='#FFF70087'>* </font>Cube’s name</string>
+	<string name="reasoning_title"><font color='#FFF70087'>* </font>Reasoning</string>
+	<string name="nomination_submitted_body">Thank you for taking the time to fill out this form! Why not nominate another cube?</string>
+    <string name="select_option_hint">Select Option</string>
+	<string name="very_unfair">Very Unfair</string>
+	<string name="unfair">Unfair</string>
+	<string name="not_sure">Not Sure</string>
+	<string name="fair">Fair</string>
+	<string name="very_fair">Very Fair</string>
+	<string name="are_you_sure">Are you sure?</string>
+	<string name="leave_warning">If you leave this page, you will loose any progress made.</string>
+	<string name="leave_page">Yes, leave page</string>
+	<string name="cancel">Cancel</string>
+	<string name="very_unfair_">very_unfair</string>
+	<string name="unfair_">unfair</string>
+	<string name="not_sure_">not_sure</string>
+	<string name="fair_">fair</string>
+	<string name="very_fair_">very_fair</string>
+	<string name="please_select_valid_nominee">Please Select valid Nominee</string>
+	<string name="please_input_your_valid_reason">Please input your valid reason</string>
+	<string name="please_select_valid_cube_of_month_fair">Please select valid cube of month fair</string>
+	<string name="no_internet_connection">No Internet Connection!</string>
+	<string name="exit">Close</string>
+    <string name="nominee_database">nominee_databases</string>
+	<string name="failed_to_post_nomination">Failed to post nomination</string>
+
+
+</resources>

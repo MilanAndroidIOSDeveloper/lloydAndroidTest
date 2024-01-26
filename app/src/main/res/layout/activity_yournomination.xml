@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg_green_page"
+	android:orientation="vertical">
+
+	<androidx.appcompat.widget.Toolbar
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/black"
+		android:paddingVertical="@dimen/_16sdp">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:importantForAccessibility="no"
+			android:layout_gravity="center_horizontal"
+			android:src="@drawable/header_lg" />
+	</androidx.appcompat.widget.Toolbar>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		style="@style/bold_headline_medium"
+		android:layout_marginHorizontal="@dimen/_15sdp"
+		android:layout_marginVertical="@dimen/_17sdp"
+		android:text="@string/your_nominations_title"
+		android:textAllCaps="true"
+		tools:ignore="TextSizeCheck"
+		android:textColor="@color/black" />
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_above="@+id/bottom_button"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/empty_container"
+			android:background="@color/grey_light"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			android:paddingHorizontal="@dimen/_25sdp">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:importantForAccessibility="no"
+				android:layout_marginTop="@dimen/_60sdp"
+				android:src="@drawable/ic_empty" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="@style/bold_headline_medium"
+				android:layout_marginTop="@dimen/_22sdp"
+				android:text="@string/empty_body"
+				android:textAlignment="center"
+				android:textAllCaps="true"
+				tools:ignore="TextSizeCheck"
+				android:textColor="@color/grey_dark" />
+
+		</LinearLayout>
+
+		<androidx.recyclerview.widget.RecyclerView
+			android:layout_above="@+id/bottom_button"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:id="@+id/nominations_list"
+			android:background="@color/white"
+			app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+		<LinearLayout
+			android:layout_alignParentBottom="true"
+			android:id="@+id/bottom_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:clipChildren="false"
+			android:clipToPadding="false"
+			android:elevation="@dimen/_8sdp"
+			android:paddingHorizontal="@dimen/_20sdp"
+			android:paddingVertical="@dimen/_17sdp">
+
+			<androidx.appcompat.widget.AppCompatButton
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/create_button"
+				tools:ignore="TextSizeCheck"
+				style="@style/button"
+				android:text="@string/create_new_nomination" />
+
+		</LinearLayout>
+		<ProgressBar
+			android:id="@+id/progressBar"
+			style="@style/Progress_Bar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:paddingBottom="@dimen/_80sdp"
+			android:visibility="gone" />
+	</RelativeLayout>
+
+
+
+
+
+</LinearLayout>

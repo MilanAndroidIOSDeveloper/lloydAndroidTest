@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:textAllCaps="true"
+        style="@style/bold_headline_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/are_you_sure"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:layout_marginRight="@dimen/_16sdp"
+        android:fontFamily="@font/anonymous_pro_regular"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:text="@string/leave_warning"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck"
+        android:textSize="@dimen/_14sdp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_42sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/leave_button"
+            style="@style/button_outline"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="7dp"
+            android:layout_weight="1"
+            tools:ignore="TextSizeCheck"
+            android:text="@string/leave_page" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="@dimen/_14sdp"
+            android:id="@+id/cancel_button"
+            style="@style/button_outline"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="TextSizeCheck"
+            android:text="@string/cancel" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

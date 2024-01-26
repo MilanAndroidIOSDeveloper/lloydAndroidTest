@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="@dimen/_16sdp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_internet_connection"
+        style="@style/bold_headline_small"
+        tools:ignore="TextSizeCheck"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:id="@+id/exit_button"
+        android:layout_gravity="center_horizontal"
+        style="@style/button"
+        android:layout_marginBottom="@dimen/_10sdp"
+        tools:ignore="TextSizeCheck"
+        android:contentDescription="@string/exit"
+        android:text="@string/exit" />
+
+</LinearLayout>
